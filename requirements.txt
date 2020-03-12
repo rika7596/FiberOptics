@@ -1,3 +1,9 @@
 pytest
+pytest-cov
+codecov
+
 numpy
 scipy
+
+matplotlib
+
