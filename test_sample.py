@@ -5,3 +5,6 @@ def test_dummy():
 class TestFoo:
     def test_foo(self):
         assert True
+
+def skip():
+    pass

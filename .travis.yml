@@ -2,10 +2,14 @@ language: python
 python:
   - "3.6"
 
-# command to install dependencies
+# install dependencies
 install:
   - pip install -r requirements.txt
 
-# command to run tests
+# run tests and collect coverage information
 script:
-  - pytest
+  - pytest --cov=./
+
+# send coverage information to codecov
+after_success:
+  - codecov -t $CODECOV_TOKEN
